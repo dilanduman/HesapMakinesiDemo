@@ -11,14 +11,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val sayi1:EditText=findViewById(R.id.editText1)
-        val sayi2:EditText=findViewById(R.id.editText2)
-        val btnHesapla:Button=findViewById(R.id.btnHesapla)
-        val sonuc:TextView=findViewById(R.id.textView5)
+        val editText1: EditText = findViewById(R.id.editText1)
+        val editText2: EditText = findViewById(R.id.editText2)
+        val btnTopla: Button = findViewById(R.id.btnSum)
+        val textView: TextView = findViewById(R.id.textView5)
 
-        btnHesapla.setOnClickListener {
-
+        btnTopla.setOnClickListener {
+            val sayi1 = editText1.text.toString().toInt()
+            val sayi2 = editText2.text.toString().toInt()
+            val toplam = sayilariTopla(sayi1, sayi2)
+            textView.text = "Sonuc: $toplam"
         }
 
+    }
+
+    private fun sayilariTopla(sayi1: Int, sayi2: Int): Int {
+        return sayi1 + sayi2
     }
 }
