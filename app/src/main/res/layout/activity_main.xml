@@ -23,16 +23,16 @@
         android:layout_marginTop="58dp"
         android:layout_marginEnd="2dp"
         android:text="Cikar"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarpma"
         app:layout_constraintStart_toEndOf="@+id/btnSum"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnCarpma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="2dp"
-        android:text="Button"
+        android:text="Carp"
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/btnCikar"
         app:layout_constraintTop_toTopOf="@+id/btnCikar" />
@@ -43,9 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="7dp"
         android:text="Button"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCarpma"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/btnCarpma" />
 
     <EditText
         android:id="@+id/editText2"
