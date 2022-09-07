@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         val editText1: EditText = findViewById(R.id.editText1)
         val editText2: EditText = findViewById(R.id.editText2)
         val btnTopla: Button = findViewById(R.id.btnSum)
-        val btnCikar:Button=findViewById(R.id.btnCikar)
-        val btnCarpma:Button=findViewById(R.id.btnCarpma)
+        val btnCikar: Button = findViewById(R.id.btnCikar)
+        val btnCarpma: Button = findViewById(R.id.btnCarpma)
         val textView: TextView = findViewById(R.id.textView5)
 
         btnTopla.setOnClickListener {
@@ -26,27 +26,27 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCikar.setOnClickListener {
-            val sayi1=editText1.text.toString().toInt()
-            val sayi2=editText2.text.toString().toInt()
-            val cikar=sayilariCikar(sayi1,sayi2)
-            textView.text="Sonuc: $cikar"
+            val sayi1 = editText1.text.toString().toInt()
+            val sayi2 = editText2.text.toString().toInt()
+            val cikar = sayilariCikar(sayi1, sayi2)
+            textView.text = "Sonuc: $cikar"
         }
 
         btnCarpma.setOnClickListener {
-            val sayi1=editText1.text.toString().toInt()
-            val sayi2=editText2.text.toString().toInt()
-            val carp=sayilariCarpma(sayi1,sayi2)
-            textView.text="Sonuc: $carp"
+            val sayi1 = editText1.text.toString().toInt()
+            val sayi2 = editText2.text.toString().toInt()
+            val carp = sayilariCarpma(sayi1, sayi2)
+            textView.text = "Sonuc: $carp"
         }
 
     }
 
     private fun sayilariCarpma(sayi1: Int, sayi2: Int): Int {
-        return sayi1*sayi2
+        return sayi1 * sayi2
     }
 
     private fun sayilariCikar(sayi1: Int, sayi2: Int): Int {
-        return sayi1-sayi2
+        return sayi1 - sayi2
     }
 
     private fun sayilariTopla(sayi1: Int, sayi2: Int): Int {
