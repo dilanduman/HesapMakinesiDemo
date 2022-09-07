@@ -41,11 +41,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun sayilariCarpma(sayi1: Int, sayi2: Int): Any {
+    private fun sayilariCarpma(sayi1: Int, sayi2: Int): Int {
         return sayi1*sayi2
     }
 
-    private fun sayilariCikar(sayi1: Int, sayi2: Int): Any {
+    private fun sayilariCikar(sayi1: Int, sayi2: Int): Int {
         return sayi1-sayi2
     }
 
